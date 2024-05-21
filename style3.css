@@ -133,13 +133,9 @@ body {
     height: auto;
   }
   
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
+  .hero-text h1 {
+    font-size: 2em;
+}
   /* About Section */
   .about {
     display: flex;
@@ -150,34 +146,40 @@ body {
     width: 100%;
     height: auto;
   }
-  
+
   .about-text {
-    flex: 0 0 100%;
-  }
-  
+    padding-left: 10px;
+}
+
+.about h2 {
+    font-size: 3.5em;
+    color: #0088FF;
+}
+.about p strong{
+    font-size: 1.5em;
+
+    display: block;
+    margin-bottom: 1px;
+    color: #000000;
+}
+.about p{
+    margin: 10px 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+
+}
   /* Adjust title in thumbnails */
   .thumbnail .title {
     text-align: center;
     margin-top: 5px;
   }
-  
+}
   /* Responsive Footer Icons */
   footer a img {
     width: 30px;
     height: 30px;
     margin: 5px;
   }
-}
-  /* General Styles for Smaller Screens */
-  @media only screen and (max-width: 425px) {
-    h2 {
-      text-align: center;
-    }
-    .about-text {
-      order: -1;
-    }
-    .hero-text {
-        position: absolute;
-      }
-  }
+
   
