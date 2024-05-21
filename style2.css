@@ -1,3 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  background-color: #131313;
+  color: #131313;
+}
+
 /* The side navigation menu */
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -37,26 +45,9 @@
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
+main {
+background-color: #131313;
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-@media screen and (max-width: 768px) {
-  .video {
-      flex-direction: column;
-      align-items: center;
-  }
-}
-
-
-
 
 * {box-sizing:border-box}
 
@@ -161,3 +152,123 @@
   width: 75%; /* Adjust the width as needed */
   margin: 0 auto; /* Center the card */
 }
+
+
+
+
+
+
+/* Responsive Carousel */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Video Thumbnails */
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.thumbnail {
+  width: 48%;
+  max-width: 300px;
+  margin: 10px 1%;
+  box-sizing: border-box;
+}
+
+
+
+/* Adjust title in thumbnails */
+.thumbnail .title {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Responsive Footer Icons */
+footer a img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 768px) {
+  .video {
+      flex-direction: column;
+      align-items: center;
+  }
+  .thumbnail {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+/* Responsive Navbar */
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .offcanvas {
+    width: 100%;
+  }
+/* General Styles for Smaller Screens */
+  h2 {
+    text-align: center;
+  }
+  .video .thumbnail {
+    flex: 0 0 calc(50% - 3%); /* Adjusted width to fit two thumbnails per row */
+    max-width: calc(50% - 3%);
+    margin: 1.5%; /* Adjusted margin to create space between thumbnails */
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: #333;
+    border-radius: 15px;
+  }
+  
+}
+/* Default styles */
+/* Media query for devices with a maximum width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller devices here */
+  .navbar-nav {
+      flex-direction: column;
+  }
+  .navbar-nav .nav-item {
+      margin-bottom: 10px;
+  }
+  .offcanvas-body {
+      padding: 15px;
+  }
+/* Media query for devices with a maximum width of 768px (phones and smaller) */
+  /* Further adjust styles for even smaller devices here */
+  .navbar-brand img {
+      width: 25px; /* Adjust as needed */
+      height: auto;
+  }
+  .offcanvas {
+      width: 100%;
+  }
+  .hero-text h1 {
+      font-size: 24px; /* Adjust as needed */
+  }
+  .button-link button {
+      padding: 10px 20px; /* Adjust as needed */
+      font-size: 14px; /* Adjust as needed */
+  }
+  .about-text p {
+      font-size: 14px; /* Adjust as needed */
+  }
+  .thumbnail {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+/* Add more media queries as needed */
