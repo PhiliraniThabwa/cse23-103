@@ -101,3 +101,83 @@ body {
     height: auto;
 }
 
+/* CSS for Responsive Design */
+
+/* General styling */
+body {
+    font-family: 'Karla', sans-serif;
+  }
+  
+  /* Responsive Navbar */
+  @media only screen and (max-width: 425px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+    .navbar-toggler {
+      display: block;
+    }
+    .offcanvas {
+      width: 100%;
+    }
+  
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* About Section */
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .about img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .about-text {
+    flex: 0 0 100%;
+  }
+  
+  /* Adjust title in thumbnails */
+  .thumbnail .title {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  /* Responsive Footer Icons */
+  footer a img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+}
+  /* General Styles for Smaller Screens */
+  @media only screen and (max-width: 425px) {
+    h2 {
+      text-align: center;
+    }
+    .about-text {
+      order: -1;
+    }
+    .hero-text {
+        position: absolute;
+      }
+  }
+  
